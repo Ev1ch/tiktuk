@@ -1,0 +1,29 @@
+@import 'styles/scss-variables';
+
+.main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tiktuks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .tiktuk {
+    width: 450px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    .tiktuk {
+      width: 100%;
+    }
+  }
+}
